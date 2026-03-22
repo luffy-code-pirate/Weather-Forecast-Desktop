@@ -1,0 +1,136 @@
+/* =========================
+   GLOBAL STYLES
+========================== */
+body {
+  font-family: "Inter", sans-serif;
+  transition: background-image 0.5s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-y: auto;
+  min-height: 100vh;
+}
+
+/* =========================
+   ANIMATION CONTAINER
+========================== */
+#animation-container {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* =========================
+   GLASS / BLUR EFFECTS
+========================== */
+.backdrop-blur-xl,
+.background-blur-xl {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* =========================
+   TEXT EFFECTS
+========================== */
+.text-shadow {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* =========================
+   CARD STYLES
+========================== */
+.card {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0.05)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   MODAL
+========================== */
+.modal-bg {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* =========================
+   STAR ANIMATION
+========================== */
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  animation: shooting-star-anim linear infinite;
+}
+
+@keyframes shooting-star-anim {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-500px, 500px);
+    opacity: 0;
+  }
+}
+
+/* =========================
+   RAIN ANIMATION
+========================== */
+.rain-drop {
+  position: absolute;
+  top: -50px;
+  width: 2px;
+  height: 40px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.5)
+  );
+  animation: rain-anim linear infinite;
+}
+
+@keyframes rain-anim {
+  to {
+    transform: translateY(110vh);
+  }
+}
+
+/* =========================
+   SNOW ANIMATION
+========================== */
+.snowflake {
+  position: absolute;
+  top: -20px;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-10vh) translateX(0);
+  }
+  to {
+    transform: translateY(110vh) translateX(40px);
+  }
+}
