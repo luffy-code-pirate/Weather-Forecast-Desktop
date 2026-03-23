@@ -28,6 +28,7 @@ A modern and responsive weather forecast web application that provides real-time
 
 
 ## 📂 Project Structure
+````
 📦 Weather-Forecast-Desktop
 ┣ 📜 index.html
 ┣ 📜 style.css
@@ -36,6 +37,7 @@ A modern and responsive weather forecast web application that provides real-time
 ┃ ┣ 📁 images
 ┃ ┗ 📁 icons
 ┗ 📜 README.md
+```
 
 
 
