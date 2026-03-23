@@ -28,22 +28,17 @@ A modern and responsive weather forecast web application that provides real-time
 
 
 ## 📂 Project Structure
-````
-📦 Weather-Forecast-Desktop
+````📦 Weather-Forecast-Desktop
 ┣ 📜 index.html
 ┣ 📜 style.css
 ┣ 📜 script.js
 ┣ 📁 Assets
 ┃ ┣ 📁 images
 ┃ ┗ 📁 icons
-┗ 📜 README.md
-```
+┗ 📜 README.md```
 
 
 
-## 📂 Live Demo
+## 🌐 Live Demo
 
-
--  https://luffy-code-pirate.github.io/Weather-Forecast-Desktop/
-
-
+👉 [Click here to view project](https://luffy-code-pirate.github.io/Weather-Forecast-Desktop/)
